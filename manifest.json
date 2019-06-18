@@ -1,0 +1,224 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Repos/Hightech/GithubDashDashVersion/DashDashVersion/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.BranchInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.BranchInfo.html",
+          "hash": "bL6DPUDmSjtbyBhh/zxK/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.FeaturePreReleaseLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.FeaturePreReleaseLabel.html",
+          "hash": "WhSij5LINUZ/BscbysLNCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.PreReleaseLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.PreReleaseLabel.html",
+          "hash": "LWBfCPOFCX4ufsuv4fVCwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.PreReleaseLabelParticle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.PreReleaseLabelParticle.html",
+          "hash": "WoCZKoQXdGa+sXTH6X/MJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.VersionNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.VersionNumber.html",
+          "hash": "JZBAYK4Q4EAsux5H59ARKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.VersionNumberGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.VersionNumberGenerator.html",
+          "hash": "gdMy7DTN+/0Glxudi6WgiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DashDashVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DashDashVersion.html",
+          "hash": "iExApNXw4zi5GEwn1JCMuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "6kLaBroZKxnvwAViZ/YH+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/HightechICT.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/HightechICT.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/feature.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/feature.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/release.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/release.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "DknIuLHuMAAk5wkjyMMzNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "mBYWCbtnNDwTK0myKauCnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ConceptualDocumentProcessor disable incremental build because last build doesn't contain version .",
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 7,
+          "skipped_file_count": 7
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
