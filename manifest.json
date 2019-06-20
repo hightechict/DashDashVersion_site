@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.BranchInfo.html",
-          "hash": "bL6DPUDmSjtbyBhh/zxK/Q=="
+          "hash": "6KSYxEBIGXIZYBeq9STxuA=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.FeaturePreReleaseLabel.html",
-          "hash": "WhSij5LINUZ/BscbysLNCA=="
+          "hash": "kjuz1rt4CPRDlsfk5qR1pg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.PreReleaseLabel.html",
-          "hash": "LWBfCPOFCX4ufsuv4fVCwA=="
+          "hash": "O6o3rhkX96gJKs3S/nmKPw=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.PreReleaseLabelParticle.html",
-          "hash": "WoCZKoQXdGa+sXTH6X/MJA=="
+          "hash": "DG+ONORXb6jNkhb3UX39Ow=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.VersionNumber.html",
-          "hash": "JZBAYK4Q4EAsux5H59ARKg=="
+          "hash": "iwTGMrgLpFrf10q3eXLaSA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.VersionNumberGenerator.html",
-          "hash": "gdMy7DTN+/0Glxudi6WgiA=="
+          "hash": "x9m8SkWdIwVIp5AM6Tucrg=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.html",
-          "hash": "iExApNXw4zi5GEwn1JCMuA=="
+          "hash": "uQfcxmlm0ujSxFQwgFTQJA=="
         }
       },
       "is_incremental": false,
@@ -147,7 +147,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "DknIuLHuMAAk5wkjyMMzNg=="
+          "hash": "jIHG6svx7OxieRfNbOyrVA=="
         }
       },
       "is_incremental": false,
@@ -169,10 +169,12 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ResourceDocumentProcessor": {
@@ -182,24 +184,23 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ConceptualDocumentProcessor disable incremental build because last build doesn't contain version .",
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 7,
-          "skipped_file_count": 7
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 7,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
           "skipped_file_count": 0
         }
       }

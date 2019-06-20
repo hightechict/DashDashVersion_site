@@ -329,12 +329,12 @@ references:
   commentId: T:DashDashVersion.VersionNumberGenerator
   fullName: DashDashVersion.VersionNumberGenerator
   nameWithType: VersionNumberGenerator
-- uid: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String)
-  name: GenerateVersionNumber(String)
-  href: api/DashDashVersion.VersionNumberGenerator.html#DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_System_String_
-  commentId: M:DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String)
-  fullName: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String)
-  nameWithType: VersionNumberGenerator.GenerateVersionNumber(String)
+- uid: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String)
+  name: GenerateVersionNumber(String, String)
+  href: api/DashDashVersion.VersionNumberGenerator.html#DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_System_String_System_String_
+  commentId: M:DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String)
+  fullName: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String, System.String)
+  nameWithType: VersionNumberGenerator.GenerateVersionNumber(String, String)
 - uid: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber*
   name: GenerateVersionNumber
   href: api/DashDashVersion.VersionNumberGenerator.html#DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_
