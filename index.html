@@ -8,7 +8,7 @@
     <title>DashDashVersion </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="DashDashVersion ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -73,6 +73,7 @@
 <h1 id="dashdashversion">DashDashVersion</h1>
 
 <p><a href="https://dev.azure.com/basbossink0470/DashDashVersion/_build/latest?definitionId=1&amp;branchName=master"><img src="https://dev.azure.com/basbossink0470/DashDashVersion/_apis/build/status/hightechict.DashDashVersion?branchName=master" alt="Build Status"></a>
+<a href="https://ci.appveyor.com/project/kees2125/dashdashversion"><img src="https://ci.appveyor.com/api/projects/status/fgpb3nb7honnt4xh/branch/master?svg=true" alt="Appveyor Build Status"></a>
 <a href="https://codecov.io/gh/hightechict/DashDashVersion"><img src="https://codecov.io/gh/hightechict/DashDashVersion/branch/master/graph/badge.svg" alt="codecov"></a>
 <a href="https://www.nuget.org/packages/git-flow-version/"><img src="https://img.shields.io/nuget/v/git-flow-version.svg?color=green" alt="nuget"></a>
 <img src="https://img.shields.io/github/license/hightechict/DashDashVersion.svg?color=purple" alt="licenceTag">
@@ -91,15 +92,51 @@
 <p>To use DashDashVersion run the command <code>git-flow-version</code> inside a git repository.
 It will return a JSON string with the following properties:</p>
 <ul>
-<li><code>SemVer</code> = a <a href="https://semver.org/">SemVer 2.0.0</a> compliant version number without metadata</li>
-<li><code>FullSemVer</code> = a <a href="https://semver.org/">SemVer 2.0.0</a> compliant version number with build metadata</li>
-<li><code>AssemblyVersion</code> = an <a href="https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assemblyversionattribute?view=netstandard-2.0"><code>AssemblyVersionAttribute</code></a> compatible version with the format <code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;.&lt;revison&gt;</code></li>
+<li><code>AssemblyVersion</code> = an <a href="https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assemblyversionattribute?view=netstandard-2.0"><code>AssemblyVersionAttribute</code></a> compatible version with the format <code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;.&lt;revison&gt;</code>,</li>
+<li><code>FullSemVer</code> = a <a href="https://semver.org/">SemVer 2.0.0</a> compliant version number with build metadata,</li>
+<li><code>SemVer</code> = a <a href="https://semver.org/">SemVer 2.0.0</a> compliant version number without build metadata.</li>
 </ul>
 <p>For example:</p>
 <pre><code class="lang-bash">$ git-flow-version
-{&quot;FullSemVer&quot;:&quot;0.2.0-dev.1+8af6c6d&quot;,&quot;SemVer&quot;:&quot;0.2.0-dev.1&quot;,&quot;AssemblyVersion&quot;:&quot;0.2.0.128&quot;}
+{
+    &quot;AssemblyVersion&quot;:&quot;0.2.0.128&quot;,
+    &quot;FullSemVer&quot;:&quot;0.2.0-dev.1+8af6c6d&quot;,
+    &quot;SemVer&quot;:&quot;0.2.0-dev.1&quot;
+}
 </code></pre>
-<h3 id="requirements">Requirements</h3>
+<h3 id="usage-in-continuous-integration-environments">Usage in Continuous Integration environments</h3>
+<p>If your Continuous Integration (CI) environment uses <a href="https://git-scm.com/docs/git-checkout#_detached_head">detached heads</a> <code>git-flow-version</code> cannot determine what the <em>type</em> (<code>master</code>, <code>release/*</code>, <code>feature/</code>, <code>hotfix/</code>, <code>support/*</code>) of the branch is for which it should generate the version number. In these cases the branch name can be specified via a command-line parameter:</p>
+<pre><code class="lang-bash">$ git-flow-wersion --branch develop
+</code></pre>
+<p>Matching of the branch name is performed using the following strategy:</p>
+<ul>
+<li>if there is a branch with the exact same name, use that branch, otherwise,</li>
+<li>find all branches that end with the same string as the provided parameter:
+<ul>
+<li>if all of these branches have the same <em>type</em> use that <em>type</em>, otherwise,</li>
+<li>if all of these branches have more than one different <em>type</em> generate an error.</li>
+</ul>
+</li>
+</ul>
+<h3 id="command-line-reference">Command-Line reference</h3>
+<p>The number of command-line parameters and/or options supported by `git-flow-version** is very limited, however below you find them explained in detail:</p>
+<h4 id="help-information">Help information</h4>
+<p>To show the help information, use any of the following command-line switches:</p>
+<pre><code class="lang-bash">$ git-flow-version -?
+$ git-flow-version -h
+$ git-flow-version --help
+</code></pre>
+<h4 id="setting-the-branch-name">Setting the branch name</h4>
+<p>To use the branch in the repository with the name that matches the supplied value to determine the <em>type</em> of the branch, add either the <code>‑b</code> or the <code>‑‑branch</code> command-line parameter followed by the name of the branch.</p>
+<pre><code class="lang-bash">$ git-flow-version -b develop
+$ git-flow-version --branch feature/issue-1234-improve-error-handling
+</code></pre>
+<h4 id="version-information">Version information</h4>
+<p>To list the version of <code>git‑flow‑version</code> use either the <code>‑v</code> or <code>‑‑version</code> command-line switches.</p>
+<pre><code class="lang-bash">$ git-flow-version -v
+$ git-flow-version --version
+</code></pre>
+<h2 id="requirements">Requirements</h2>
 <p>DashDashVersion only supports repositories that strictly follow the <a href="https://nl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> conventions with the branch names:</p>
 <ul>
 <li><code>master</code></li>
