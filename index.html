@@ -8,7 +8,7 @@
     <title>DashDashVersion </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="DashDashVersion ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -79,8 +79,14 @@
 <img src="https://img.shields.io/github/license/hightechict/DashDashVersion.svg?color=purple" alt="licenceTag">
 <a href="https://www.dashdashversion.net/"><img src="https://img.shields.io/badge/-docs-blue.svg" alt="docs"></a>
 <a href="https://github.com/hightechict/DashDashVersion"><img src="https://img.shields.io/badge/-repository-green.svg" alt="docs"></a></p>
-<p>DashDashVersion creates predictable and opinionated <a href="https://semver.org/">SemVer 2.0.0 version</a> numbers for <a href="https://nl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> repositories.</p>
+<p>DashDashVersion creates predictable and opinionated <a href="https://semver.org/">SemVer 2.0.0 version</a> numbers for <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> repositories.</p>
 <p>It consists of an executable that can be installed as a <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools"><code>dotnet</code> global tool</a> and a reusable library <a href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard">NET Standard 2.0</a> that can be used in other applications or .NET based build scripts.</p>
+<h2 id="why-dashdashversion">Why DashDashVersion?</h2>
+<p>DashDashVersion is an application to generate a version number for a git repository that follows <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git-flow</a>.
+Ideal if you are using <a href="https://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a>.
+The version number can be used for packages or to simply tag your commits.</p>
+<p>DashDashVersion provides automated versioning during development, while leaving control over release versions to the user.
+It complies with <a href="https://semver.org/">SemVer 2.0</a>. DashDashVersion only supports repositories that strictly follow the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> conventions, this may seem overly restrictive but we believe strongly in simplicity and convention over configuration.</p>
 <h2 id="installation">Installation</h2>
 <p>DashDashVersion can be installed as a <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools"><code>dotnet</code> global tool</a> by using the following command:</p>
 <pre><code class="lang-bash">$ dotnet tool install --global git-flow-version
@@ -106,7 +112,7 @@ It will return a JSON string with the following properties:</p>
 </code></pre>
 <h3 id="usage-in-continuous-integration-environments">Usage in Continuous Integration environments</h3>
 <p>If your Continuous Integration (CI) environment uses <a href="https://git-scm.com/docs/git-checkout#_detached_head">detached heads</a> <code>git-flow-version</code> cannot determine what the <em>type</em> (<code>master</code>, <code>release/*</code>, <code>feature/</code>, <code>hotfix/</code>, <code>support/*</code>) of the branch is for which it should generate the version number. In these cases the branch name can be specified via a command-line parameter:</p>
-<pre><code class="lang-bash">$ git-flow-wersion --branch develop
+<pre><code class="lang-bash">$ git-flow-version --branch develop
 </code></pre>
 <p>Matching of the branch name is performed using the following strategy:</p>
 <ul>
@@ -119,7 +125,7 @@ It will return a JSON string with the following properties:</p>
 </li>
 </ul>
 <h3 id="command-line-reference">Command-Line reference</h3>
-<p>The number of command-line parameters and/or options supported by `git-flow-version** is very limited, however below you find them explained in detail:</p>
+<p>The number of command-line parameters and/or options supported by <code>git-flow-version</code> is very limited, however below you find them explained in detail:</p>
 <h4 id="help-information">Help information</h4>
 <p>To show the help information, use any of the following command-line switches:</p>
 <pre><code class="lang-bash">$ git-flow-version -?
@@ -137,7 +143,7 @@ $ git-flow-version --branch feature/issue-1234-improve-error-handling
 $ git-flow-version --version
 </code></pre>
 <h2 id="requirements">Requirements</h2>
-<p>DashDashVersion only supports repositories that strictly follow the <a href="https://nl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> conventions with the branch names:</p>
+<p>DashDashVersion only supports repositories that strictly follow the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> conventions with the branch names:</p>
 <ul>
 <li><code>master</code></li>
 <li><code>develop</code></li>
@@ -149,15 +155,15 @@ $ git-flow-version --version
 <p>this may seem overly restrictive but we believe strongly in simplicity and convention over configuration.</p>
 <h4 id="bootstrap-requirements">Bootstrap requirements</h4>
 <ul>
-<li>A tag on <code>master</code> with a <a href="https://semver.org/">SemVer 2.0.0</a> compliant name for the latest release, without a pre-release label and without build metadata, even if it's only a <code>0.0.0</code> at the beginning of the master branch.</li>
+<li>A tag on <code>master</code> with a <a href="https://semver.org/">SemVer 2.0.0</a> compliant name for the latest release, without a pre-release label and without build metadata, if not it will assume 0.0.0 as the current version at the first commit on the repository and count from there.</li>
 <li>On any active <code>release/</code> or <code>hotfix/</code> branch add a tag using the  <code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;-rc.&lt;number&gt;</code> format if having consecutive <code>rc</code> versions is required.</li>
 </ul>
 <h3 id="configuration">Configuration</h3>
-<p>There is nothing to configure 🙌, you have already done the necessary configuration by adhering to <a href="https://nl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> 😜.</p>
+<p>There is nothing to configure 🙌, you have already done the necessary configuration by adhering to <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">git flow</a> 😜.</p>
 <h3 id="keep-in-mind">Keep in mind</h3>
 <ul>
 <li>Only <code>release/</code>, <code>hotfix/</code>, <code>develop</code> and <code>feature/</code> branches are supported, for other branches a human has to decide on a version number.</li>
-<li>Make sure to tag release and hotfix branches after generating a version number, the next version number is solely reliant upon that tag.</li>
+<li>Make sure to tag <code>release/</code> and <code>hotfix/</code> branches after generating a version number, the next version number is solely reliant upon that tag.</li>
 <li>For unsupported branches if a tag is already present in the correct format, that version number will be returned, to facilitate rebuilds on <code>master</code> for example.</li>
 </ul>
 <h2 id="what-version-number-to-expect">What version number to expect</h2>
@@ -169,7 +175,12 @@ After performing:</p>
 $ git flow release finish
 </code></pre>
 <p>the output of <code>git-flow-version</code> will be:</p>
-<pre><code class="lang-json">{&quot;FullSemVer&quot;:&quot;0.2.0-dev.1+8af6c6d&quot;,&quot;SemVer&quot;:&quot;0.2.0-dev.1&quot;,&quot;AssemblyVersion&quot;:&quot;0.2.0.128&quot;}
+<pre><code class="lang-bash">$ git-flow-version
+{
+    &quot;AssemblyVersion&quot;:&quot;0.2.0.128&quot;,
+    &quot;FullSemVer&quot;:&quot;0.2.0-dev.1+8af6c6d&quot;,
+    &quot;SemVer&quot;:&quot;0.2.0-dev.1&quot;
+}
 </code></pre>
 <h3 id="on-a-feature-branch">On a <code>feature/</code> branch</h3>
 <p>For a feature branch a version number will be calculated for the branch-off point from <code>origin/develop</code> or <code>develop</code> if there is no <code>origin/develop</code>. The number of commits on the feature branch is counted and these pieces are glued together.
@@ -185,9 +196,11 @@ So if the last tag was <code>0.2.0-rc.4</code> the next version number would be 
 <p>The version number of the tag on <code>HEAD</code> will be returned if it can be found and parsed otherwise an error is generated.</p>
 <h2 id="contributing">Contributing</h2>
 <p>If you want to contribute to DashDashVersion you are more than welcome.<br>
-Read more about contributing <a href="https://github.com/dashdashversion/CONTRIBUTING.md">here</a>.</p>
+Read more about contributing <a href="https://github.com/hightechict/DashDashVersion/blob/develop/CONTRIBUTING.md">here</a>.</p>
 <h2 id="license">License</h2>
-<p>This work is licensed under the LGPL license, refer to the <a href="https://github.com/dashdashversion/COPYING.md">COPYING.md</a> and <a href="https://github.com/dashdashversion/COPYING.LESSER.md">COPYING.LESSER.md</a> files for details.</p>
+<p>This work is licensed under the LGPL license, refer to the <a href="https://raw.githubusercontent.com/hightechict/DashDashVersion/develop/COPYING">COPYING.md</a> and <a href="https://raw.githubusercontent.com/hightechict/DashDashVersion/develop/COPYING.LESSER">COPYING.LESSER.md</a> files for details.</p>
+<h2 id="repository">Repository</h2>
+<p>The source code of this projecte can be found on <a href="https://github.com/hightechict/DashDashVersion">github</a>.</p>
 </article>
           </div>
           

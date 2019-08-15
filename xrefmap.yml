@@ -7,83 +7,6 @@ references:
   commentId: N:DashDashVersion
   fullName: DashDashVersion
   nameWithType: DashDashVersion
-- uid: DashDashVersion.BranchInfo
-  name: BranchInfo
-  href: api/DashDashVersion.BranchInfo.html
-  commentId: T:DashDashVersion.BranchInfo
-  fullName: DashDashVersion.BranchInfo
-  nameWithType: BranchInfo
-- uid: DashDashVersion.BranchInfo.#ctor(System.String)
-  name: BranchInfo(String)
-  href: api/DashDashVersion.BranchInfo.html#DashDashVersion_BranchInfo__ctor_System_String_
-  commentId: M:DashDashVersion.BranchInfo.#ctor(System.String)
-  fullName: DashDashVersion.BranchInfo.BranchInfo(System.String)
-  nameWithType: BranchInfo.BranchInfo(String)
-- uid: DashDashVersion.BranchInfo.#ctor*
-  name: BranchInfo
-  href: api/DashDashVersion.BranchInfo.html#DashDashVersion_BranchInfo__ctor_
-  commentId: Overload:DashDashVersion.BranchInfo.#ctor
-  isSpec: "True"
-  fullName: DashDashVersion.BranchInfo.BranchInfo
-  nameWithType: BranchInfo.BranchInfo
-- uid: DashDashVersion.BranchInfo.Name
-  name: Name
-  href: api/DashDashVersion.BranchInfo.html#DashDashVersion_BranchInfo_Name
-  commentId: P:DashDashVersion.BranchInfo.Name
-  fullName: DashDashVersion.BranchInfo.Name
-  nameWithType: BranchInfo.Name
-- uid: DashDashVersion.BranchInfo.Name*
-  name: Name
-  href: api/DashDashVersion.BranchInfo.html#DashDashVersion_BranchInfo_Name_
-  commentId: Overload:DashDashVersion.BranchInfo.Name
-  isSpec: "True"
-  fullName: DashDashVersion.BranchInfo.Name
-  nameWithType: BranchInfo.Name
-- uid: DashDashVersion.BranchInfo.ToString
-  name: ToString()
-  href: api/DashDashVersion.BranchInfo.html#DashDashVersion_BranchInfo_ToString
-  commentId: M:DashDashVersion.BranchInfo.ToString
-  fullName: DashDashVersion.BranchInfo.ToString()
-  nameWithType: BranchInfo.ToString()
-- uid: DashDashVersion.BranchInfo.ToString*
-  name: ToString
-  href: api/DashDashVersion.BranchInfo.html#DashDashVersion_BranchInfo_ToString_
-  commentId: Overload:DashDashVersion.BranchInfo.ToString
-  isSpec: "True"
-  fullName: DashDashVersion.BranchInfo.ToString
-  nameWithType: BranchInfo.ToString
-- uid: DashDashVersion.FeaturePreReleaseLabel
-  name: FeaturePreReleaseLabel
-  href: api/DashDashVersion.FeaturePreReleaseLabel.html
-  commentId: T:DashDashVersion.FeaturePreReleaseLabel
-  fullName: DashDashVersion.FeaturePreReleaseLabel
-  nameWithType: FeaturePreReleaseLabel
-- uid: DashDashVersion.FeaturePreReleaseLabel.FeatureBranchLabel
-  name: FeatureBranchLabel
-  href: api/DashDashVersion.FeaturePreReleaseLabel.html#DashDashVersion_FeaturePreReleaseLabel_FeatureBranchLabel
-  commentId: P:DashDashVersion.FeaturePreReleaseLabel.FeatureBranchLabel
-  fullName: DashDashVersion.FeaturePreReleaseLabel.FeatureBranchLabel
-  nameWithType: FeaturePreReleaseLabel.FeatureBranchLabel
-- uid: DashDashVersion.FeaturePreReleaseLabel.FeatureBranchLabel*
-  name: FeatureBranchLabel
-  href: api/DashDashVersion.FeaturePreReleaseLabel.html#DashDashVersion_FeaturePreReleaseLabel_FeatureBranchLabel_
-  commentId: Overload:DashDashVersion.FeaturePreReleaseLabel.FeatureBranchLabel
-  isSpec: "True"
-  fullName: DashDashVersion.FeaturePreReleaseLabel.FeatureBranchLabel
-  nameWithType: FeaturePreReleaseLabel.FeatureBranchLabel
-- uid: DashDashVersion.FeaturePreReleaseLabel.ToString
-  name: ToString()
-  href: api/DashDashVersion.FeaturePreReleaseLabel.html#DashDashVersion_FeaturePreReleaseLabel_ToString
-  commentId: M:DashDashVersion.FeaturePreReleaseLabel.ToString
-  fullName: DashDashVersion.FeaturePreReleaseLabel.ToString()
-  nameWithType: FeaturePreReleaseLabel.ToString()
-- uid: DashDashVersion.FeaturePreReleaseLabel.ToString*
-  name: ToString
-  href: api/DashDashVersion.FeaturePreReleaseLabel.html#DashDashVersion_FeaturePreReleaseLabel_ToString_
-  commentId: Overload:DashDashVersion.FeaturePreReleaseLabel.ToString
-  isSpec: "True"
-  fullName: DashDashVersion.FeaturePreReleaseLabel.ToString
-  nameWithType: FeaturePreReleaseLabel.ToString
 - uid: DashDashVersion.PreReleaseLabel
   name: PreReleaseLabel
   href: api/DashDashVersion.PreReleaseLabel.html
@@ -116,70 +39,28 @@ references:
   isSpec: "True"
   fullName: DashDashVersion.PreReleaseLabel.ToString
   nameWithType: PreReleaseLabel.ToString
-- uid: DashDashVersion.PreReleaseLabelParticle
-  name: PreReleaseLabelParticle
-  href: api/DashDashVersion.PreReleaseLabelParticle.html
-  commentId: T:DashDashVersion.PreReleaseLabelParticle
-  fullName: DashDashVersion.PreReleaseLabelParticle
-  nameWithType: PreReleaseLabelParticle
-- uid: DashDashVersion.PreReleaseLabelParticle.#ctor(System.String,System.UInt32)
-  name: PreReleaseLabelParticle(String, UInt32)
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle__ctor_System_String_System_UInt32_
-  commentId: M:DashDashVersion.PreReleaseLabelParticle.#ctor(System.String,System.UInt32)
-  fullName: DashDashVersion.PreReleaseLabelParticle.PreReleaseLabelParticle(System.String, System.UInt32)
-  nameWithType: PreReleaseLabelParticle.PreReleaseLabelParticle(String, UInt32)
-- uid: DashDashVersion.PreReleaseLabelParticle.#ctor*
-  name: PreReleaseLabelParticle
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle__ctor_
-  commentId: Overload:DashDashVersion.PreReleaseLabelParticle.#ctor
-  isSpec: "True"
-  fullName: DashDashVersion.PreReleaseLabelParticle.PreReleaseLabelParticle
-  nameWithType: PreReleaseLabelParticle.PreReleaseLabelParticle
-- uid: DashDashVersion.PreReleaseLabelParticle.Label
-  name: Label
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle_Label
-  commentId: P:DashDashVersion.PreReleaseLabelParticle.Label
-  fullName: DashDashVersion.PreReleaseLabelParticle.Label
-  nameWithType: PreReleaseLabelParticle.Label
-- uid: DashDashVersion.PreReleaseLabelParticle.Label*
-  name: Label
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle_Label_
-  commentId: Overload:DashDashVersion.PreReleaseLabelParticle.Label
-  isSpec: "True"
-  fullName: DashDashVersion.PreReleaseLabelParticle.Label
-  nameWithType: PreReleaseLabelParticle.Label
-- uid: DashDashVersion.PreReleaseLabelParticle.Ordinal
-  name: Ordinal
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle_Ordinal
-  commentId: P:DashDashVersion.PreReleaseLabelParticle.Ordinal
-  fullName: DashDashVersion.PreReleaseLabelParticle.Ordinal
-  nameWithType: PreReleaseLabelParticle.Ordinal
-- uid: DashDashVersion.PreReleaseLabelParticle.Ordinal*
-  name: Ordinal
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle_Ordinal_
-  commentId: Overload:DashDashVersion.PreReleaseLabelParticle.Ordinal
-  isSpec: "True"
-  fullName: DashDashVersion.PreReleaseLabelParticle.Ordinal
-  nameWithType: PreReleaseLabelParticle.Ordinal
-- uid: DashDashVersion.PreReleaseLabelParticle.ToString
-  name: ToString()
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle_ToString
-  commentId: M:DashDashVersion.PreReleaseLabelParticle.ToString
-  fullName: DashDashVersion.PreReleaseLabelParticle.ToString()
-  nameWithType: PreReleaseLabelParticle.ToString()
-- uid: DashDashVersion.PreReleaseLabelParticle.ToString*
-  name: ToString
-  href: api/DashDashVersion.PreReleaseLabelParticle.html#DashDashVersion_PreReleaseLabelParticle_ToString_
-  commentId: Overload:DashDashVersion.PreReleaseLabelParticle.ToString
-  isSpec: "True"
-  fullName: DashDashVersion.PreReleaseLabelParticle.ToString
-  nameWithType: PreReleaseLabelParticle.ToString
 - uid: DashDashVersion.VersionNumber
   name: VersionNumber
   href: api/DashDashVersion.VersionNumber.html
   commentId: T:DashDashVersion.VersionNumber
   fullName: DashDashVersion.VersionNumber
   nameWithType: VersionNumber
+- uid: DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Nullable{DashDashVersion.PreReleaseLabel},System.String,System.Boolean)
+  name: VersionNumber(UInt32, UInt32, UInt32, Nullable<PreReleaseLabel>, String, Boolean)
+  href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber__ctor_System_UInt32_System_UInt32_System_UInt32_System_Nullable_DashDashVersion_PreReleaseLabel__System_String_System_Boolean_
+  commentId: M:DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Nullable{DashDashVersion.PreReleaseLabel},System.String,System.Boolean)
+  name.vb: VersionNumber(UInt32, UInt32, UInt32, Nullable(Of PreReleaseLabel), String, Boolean)
+  fullName: DashDashVersion.VersionNumber.VersionNumber(System.UInt32, System.UInt32, System.UInt32, System.Nullable<DashDashVersion.PreReleaseLabel>, System.String, System.Boolean)
+  fullName.vb: DashDashVersion.VersionNumber.VersionNumber(System.UInt32, System.UInt32, System.UInt32, System.Nullable(Of DashDashVersion.PreReleaseLabel), System.String, System.Boolean)
+  nameWithType: VersionNumber.VersionNumber(UInt32, UInt32, UInt32, Nullable<PreReleaseLabel>, String, Boolean)
+  nameWithType.vb: VersionNumber.VersionNumber(UInt32, UInt32, UInt32, Nullable(Of PreReleaseLabel), String, Boolean)
+- uid: DashDashVersion.VersionNumber.#ctor*
+  name: VersionNumber
+  href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber__ctor_
+  commentId: Overload:DashDashVersion.VersionNumber.#ctor
+  isSpec: "True"
+  fullName: DashDashVersion.VersionNumber.VersionNumber
+  nameWithType: VersionNumber.VersionNumber
 - uid: DashDashVersion.VersionNumber.AssemblyVersion
   name: AssemblyVersion
   href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber_AssemblyVersion
@@ -206,6 +87,19 @@ references:
   isSpec: "True"
   fullName: DashDashVersion.VersionNumber.CompareTo
   nameWithType: VersionNumber.CompareTo
+- uid: DashDashVersion.VersionNumber.DebugVersion
+  name: DebugVersion
+  href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber_DebugVersion
+  commentId: P:DashDashVersion.VersionNumber.DebugVersion
+  fullName: DashDashVersion.VersionNumber.DebugVersion
+  nameWithType: VersionNumber.DebugVersion
+- uid: DashDashVersion.VersionNumber.DebugVersion*
+  name: DebugVersion
+  href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber_DebugVersion_
+  commentId: Overload:DashDashVersion.VersionNumber.DebugVersion
+  isSpec: "True"
+  fullName: DashDashVersion.VersionNumber.DebugVersion
+  nameWithType: VersionNumber.DebugVersion
 - uid: DashDashVersion.VersionNumber.FullSemVer
   name: FullSemVer
   href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber_FullSemVer

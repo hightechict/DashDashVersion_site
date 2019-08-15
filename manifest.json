@@ -14,47 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DashDashVersion.BranchInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DashDashVersion.BranchInfo.html",
-          "hash": "mI2Kovs/E57Tn4ZeXi+zgw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DashDashVersion.FeaturePreReleaseLabel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DashDashVersion.FeaturePreReleaseLabel.html",
-          "hash": "ksajmXmAspy35w2P/KyOrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DashDashVersion.PreReleaseLabel.yml",
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.PreReleaseLabel.html",
-          "hash": "GlfhBsZbipPp/7vcDmZFyw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DashDashVersion.PreReleaseLabelParticle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DashDashVersion.PreReleaseLabelParticle.html",
-          "hash": "jEWIU/u/L9QYZG8zJcBP9w=="
+          "hash": "PmQBnZo8uF+atCOy0OVJjA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.VersionNumber.html",
-          "hash": "IxBJQ2+poEhx4jZqqdCctg=="
+          "hash": "rLptnNyph6+Rcv1vzAsQQw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.VersionNumberGenerator.html",
-          "hash": "+ilH7Age9NIUlmSWyJJkWw=="
+          "hash": "MoWYw/u6SLDj+OsPiiSdpw=="
         }
       },
       "is_incremental": false,
@@ -90,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DashDashVersion.html",
-          "hash": "UDI8h9ZriPCX7zjoU3sBEw=="
+          "hash": "QC4kEU9SfBn3Ekgejmqtug=="
         }
       },
       "is_incremental": false,
@@ -102,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6kLaBroZKxnvwAViZ/YH+w=="
+          "hash": "IPMJIx7WB1rgyS9oghYs2A=="
         }
       },
       "is_incremental": false,
@@ -147,7 +111,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "QpLqa2PU8cN9NHAYDjwNqA=="
+          "hash": "U91kmoGdXxuI/2eI6dZJIQ=="
         }
       },
       "is_incremental": false,
@@ -177,16 +141,16 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
@@ -200,7 +164,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 4,
           "skipped_file_count": 0
         }
       }

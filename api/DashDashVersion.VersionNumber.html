@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VersionNumber
    ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,7 +83,7 @@
   
   <h1 id="DashDashVersion_VersionNumber" data-uid="DashDashVersion.VersionNumber" class="text-break">Class VersionNumber
   </h1>
-  <div class="markdown level0 summary"><p>This class is used to represent a single version number.</p>
+  <div class="markdown level0 summary"><p>This class is used to represent a single <a href="https://semver.org">Semantic Versioning 2.0.0</a> version number.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -122,11 +122,64 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class VersionNumber : IComparable&lt;VersionNumber&gt;</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="DashDashVersion_VersionNumber__ctor_" data-uid="DashDashVersion.VersionNumber.#ctor*"></a>
+  <h4 id="DashDashVersion_VersionNumber__ctor_System_UInt32_System_UInt32_System_UInt32_System_Nullable_DashDashVersion_PreReleaseLabel__System_String_System_Boolean_" data-uid="DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Nullable{DashDashVersion.PreReleaseLabel},System.String,System.Boolean)">VersionNumber(UInt32, UInt32, UInt32, Nullable&lt;PreReleaseLabel&gt;, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VersionNumber(uint major, uint minor, uint patch, PreReleaseLabel? preReleaseTag = default(PreReleaseLabel? ), string metadata = &quot;&quot;, bool debugVersion = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DashDashVersion.PreReleaseLabel.html">PreReleaseLabel</a>&gt;</td>
+        <td><span class="parametername">preReleaseTag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">debugVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="DashDashVersion_VersionNumber_AssemblyVersion_" data-uid="DashDashVersion.VersionNumber.AssemblyVersion*"></a>
   <h4 id="DashDashVersion_VersionNumber_AssemblyVersion" data-uid="DashDashVersion.VersionNumber.AssemblyVersion">AssemblyVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A string representation of this VersionNumber that can be used as the constructor parameter of the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assemblyversionattribute?view=netstandard-2.0">AssemblyVersionAttribute</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -147,9 +200,34 @@
       </tr>
     </tbody>
   </table>
+  <a id="DashDashVersion_VersionNumber_DebugVersion_" data-uid="DashDashVersion.VersionNumber.DebugVersion*"></a>
+  <h4 id="DashDashVersion_VersionNumber_DebugVersion" data-uid="DashDashVersion.VersionNumber.DebugVersion">DebugVersion</h4>
+  <div class="markdown level1 summary"><p>This property conveys whether the debug flag should be added to the version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DebugVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="DashDashVersion_VersionNumber_FullSemVer_" data-uid="DashDashVersion.VersionNumber.FullSemVer*"></a>
   <h4 id="DashDashVersion_VersionNumber_FullSemVer" data-uid="DashDashVersion.VersionNumber.FullSemVer">FullSemVer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The full semantic version string of the version number including a pre-release label (if present) and the build meta data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,7 +250,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_Major_" data-uid="DashDashVersion.VersionNumber.Major*"></a>
   <h4 id="DashDashVersion_VersionNumber_Major" data-uid="DashDashVersion.VersionNumber.Major">Major</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The major version number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -195,7 +274,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_Metadata_" data-uid="DashDashVersion.VersionNumber.Metadata*"></a>
   <h4 id="DashDashVersion_VersionNumber_Metadata" data-uid="DashDashVersion.VersionNumber.Metadata">Metadata</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This property contains the possibly empty build metadata.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -218,7 +298,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_Minor_" data-uid="DashDashVersion.VersionNumber.Minor*"></a>
   <h4 id="DashDashVersion_VersionNumber_Minor" data-uid="DashDashVersion.VersionNumber.Minor">Minor</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The minor version number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,7 +322,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_Patch_" data-uid="DashDashVersion.VersionNumber.Patch*"></a>
   <h4 id="DashDashVersion_VersionNumber_Patch" data-uid="DashDashVersion.VersionNumber.Patch">Patch</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The patch number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,7 +346,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_PreReleaseLabel_" data-uid="DashDashVersion.VersionNumber.PreReleaseLabel*"></a>
   <h4 id="DashDashVersion_VersionNumber_PreReleaseLabel" data-uid="DashDashVersion.VersionNumber.PreReleaseLabel">PreReleaseLabel</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The (optional) pre-release label.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -287,7 +370,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_SemVer_" data-uid="DashDashVersion.VersionNumber.SemVer*"></a>
   <h4 id="DashDashVersion_VersionNumber_SemVer" data-uid="DashDashVersion.VersionNumber.SemVer">SemVer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The semantic version string of the version number including a pre-release label (if present), but without the build meta data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -312,7 +396,8 @@
   </h3>
   <a id="DashDashVersion_VersionNumber_CompareTo_" data-uid="DashDashVersion.VersionNumber.CompareTo*"></a>
   <h4 id="DashDashVersion_VersionNumber_CompareTo_DashDashVersion_VersionNumber_" data-uid="DashDashVersion.VersionNumber.CompareTo(DashDashVersion.VersionNumber)">CompareTo(VersionNumber)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method determines the ordering of VersionNumber instances.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +437,8 @@
   </table>
   <a id="DashDashVersion_VersionNumber_Parse_" data-uid="DashDashVersion.VersionNumber.Parse*"></a>
   <h4 id="DashDashVersion_VersionNumber_Parse_System_String_" data-uid="DashDashVersion.VersionNumber.Parse(System.String)">Parse(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parse a semver 2.0.0 compliant string to a VersionNumber instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +495,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The full semantic version string of the version number including a pre-release label (if present) and the build meta data.</p>
+</td>
       </tr>
     </tbody>
   </table>
