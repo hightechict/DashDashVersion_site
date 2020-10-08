@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VersionNumberGenerator
    ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -124,13 +124,13 @@
   <h3 id="methods">Methods
   </h3>
   <a id="DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_" data-uid="DashDashVersion.VersionNumberGenerator.GenerateVersionNumber*"></a>
-  <h4 id="DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_System_String_System_String_" data-uid="DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String)">GenerateVersionNumber(String, String)</h4>
+  <h4 id="DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_System_String_System_String_System_Boolean_" data-uid="DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String,System.Boolean)">GenerateVersionNumber(String, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Generate a VersionNumber for the git repository.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static VersionNumber GenerateVersionNumber(string path, string branch)</code></pre>
+    <pre><code class="lang-csharp hljs">public static VersionNumber GenerateVersionNumber(string path, string branch, bool checkIfRepoIsClean)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -152,6 +152,12 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">branch</span></td>
         <td><p>The name of the branch to consider when generating the version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">checkIfRepoIsClean</span></td>
+        <td><p>Whether or not the repository needs to be in a clean state.</p>
 </td>
       </tr>
     </tbody>

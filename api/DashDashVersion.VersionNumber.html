@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VersionNumber
    ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -125,12 +125,12 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="DashDashVersion_VersionNumber__ctor_" data-uid="DashDashVersion.VersionNumber.#ctor*"></a>
-  <h4 id="DashDashVersion_VersionNumber__ctor_System_UInt32_System_UInt32_System_UInt32_System_Nullable_DashDashVersion_PreReleaseLabel__System_String_System_Boolean_" data-uid="DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Nullable{DashDashVersion.PreReleaseLabel},System.String,System.Boolean)">VersionNumber(UInt32, UInt32, UInt32, Nullable&lt;PreReleaseLabel&gt;, String, Boolean)</h4>
+  <h4 id="DashDashVersion_VersionNumber__ctor_System_UInt32_System_UInt32_System_UInt32_DashDashVersion_PreReleaseLabel_System_String_System_Boolean_" data-uid="DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,DashDashVersion.PreReleaseLabel,System.String,System.Boolean)">VersionNumber(UInt32, UInt32, UInt32, PreReleaseLabel, String, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VersionNumber(uint major, uint minor, uint patch, PreReleaseLabel? preReleaseTag = default(PreReleaseLabel? ), string metadata = &quot;&quot;, bool debugVersion = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public VersionNumber(uint major, uint minor, uint patch, PreReleaseLabel preReleaseTag = null, string metadata = &quot;&quot;, bool debugVersion = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,7 +158,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DashDashVersion.PreReleaseLabel.html">PreReleaseLabel</a>&gt;</td>
+        <td><a class="xref" href="DashDashVersion.PreReleaseLabel.html">PreReleaseLabel</a></td>
         <td><span class="parametername">preReleaseTag</span></td>
         <td></td>
       </tr>
@@ -351,7 +351,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PreReleaseLabel? PreReleaseLabel { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PreReleaseLabel PreReleaseLabel { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,7 +363,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DashDashVersion.PreReleaseLabel.html">PreReleaseLabel</a>&gt;</td>
+        <td><a class="xref" href="DashDashVersion.PreReleaseLabel.html">PreReleaseLabel</a></td>
         <td></td>
       </tr>
     </tbody>

@@ -45,15 +45,12 @@ references:
   commentId: T:DashDashVersion.VersionNumber
   fullName: DashDashVersion.VersionNumber
   nameWithType: VersionNumber
-- uid: DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Nullable{DashDashVersion.PreReleaseLabel},System.String,System.Boolean)
-  name: VersionNumber(UInt32, UInt32, UInt32, Nullable<PreReleaseLabel>, String, Boolean)
-  href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber__ctor_System_UInt32_System_UInt32_System_UInt32_System_Nullable_DashDashVersion_PreReleaseLabel__System_String_System_Boolean_
-  commentId: M:DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,System.Nullable{DashDashVersion.PreReleaseLabel},System.String,System.Boolean)
-  name.vb: VersionNumber(UInt32, UInt32, UInt32, Nullable(Of PreReleaseLabel), String, Boolean)
-  fullName: DashDashVersion.VersionNumber.VersionNumber(System.UInt32, System.UInt32, System.UInt32, System.Nullable<DashDashVersion.PreReleaseLabel>, System.String, System.Boolean)
-  fullName.vb: DashDashVersion.VersionNumber.VersionNumber(System.UInt32, System.UInt32, System.UInt32, System.Nullable(Of DashDashVersion.PreReleaseLabel), System.String, System.Boolean)
-  nameWithType: VersionNumber.VersionNumber(UInt32, UInt32, UInt32, Nullable<PreReleaseLabel>, String, Boolean)
-  nameWithType.vb: VersionNumber.VersionNumber(UInt32, UInt32, UInt32, Nullable(Of PreReleaseLabel), String, Boolean)
+- uid: DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,DashDashVersion.PreReleaseLabel,System.String,System.Boolean)
+  name: VersionNumber(UInt32, UInt32, UInt32, PreReleaseLabel, String, Boolean)
+  href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber__ctor_System_UInt32_System_UInt32_System_UInt32_DashDashVersion_PreReleaseLabel_System_String_System_Boolean_
+  commentId: M:DashDashVersion.VersionNumber.#ctor(System.UInt32,System.UInt32,System.UInt32,DashDashVersion.PreReleaseLabel,System.String,System.Boolean)
+  fullName: DashDashVersion.VersionNumber.VersionNumber(System.UInt32, System.UInt32, System.UInt32, DashDashVersion.PreReleaseLabel, System.String, System.Boolean)
+  nameWithType: VersionNumber.VersionNumber(UInt32, UInt32, UInt32, PreReleaseLabel, String, Boolean)
 - uid: DashDashVersion.VersionNumber.#ctor*
   name: VersionNumber
   href: api/DashDashVersion.VersionNumber.html#DashDashVersion_VersionNumber__ctor_
@@ -223,12 +220,12 @@ references:
   commentId: T:DashDashVersion.VersionNumberGenerator
   fullName: DashDashVersion.VersionNumberGenerator
   nameWithType: VersionNumberGenerator
-- uid: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String)
-  name: GenerateVersionNumber(String, String)
-  href: api/DashDashVersion.VersionNumberGenerator.html#DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_System_String_System_String_
-  commentId: M:DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String)
-  fullName: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String, System.String)
-  nameWithType: VersionNumberGenerator.GenerateVersionNumber(String, String)
+- uid: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String,System.Boolean)
+  name: GenerateVersionNumber(String, String, Boolean)
+  href: api/DashDashVersion.VersionNumberGenerator.html#DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_System_String_System_String_System_Boolean_
+  commentId: M:DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String,System.String,System.Boolean)
+  fullName: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber(System.String, System.String, System.Boolean)
+  nameWithType: VersionNumberGenerator.GenerateVersionNumber(String, String, Boolean)
 - uid: DashDashVersion.VersionNumberGenerator.GenerateVersionNumber*
   name: GenerateVersionNumber
   href: api/DashDashVersion.VersionNumberGenerator.html#DashDashVersion_VersionNumberGenerator_GenerateVersionNumber_
